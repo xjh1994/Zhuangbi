@@ -1,13 +1,17 @@
 package com.xjh1994.zhuangbi;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import com.xjh1994.zhuangbi.ui.base.BaseToolbarActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseToolbarActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public int getLayoutResId() {
+        return R.layout.activity_main;
     }
+
+    @Override
+    public void initViews() {
+
+    }
+
 }

@@ -1,11 +1,34 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:buttonStyle">@style/ButtonTheme</item>
+    </style>
+
+    <style name="ButtonTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <!-- ToolBar菜单样式 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">#a00</item> <!--  敲定颜色-->
+        <item name="android:textSize">18sp</item> <!--  字体大小-->
+    </style>
+
+    <style name="AppThemeWithNoOverlay" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/layer_activity_splash</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
 </resources>
