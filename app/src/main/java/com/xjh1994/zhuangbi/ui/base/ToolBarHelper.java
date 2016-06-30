@@ -63,6 +63,7 @@ public class ToolBarHelper {
         /*通过inflater获取toolbar的布局文件*/
         View toolbar = mInflater.inflate(R.layout.include_toolbar, mContentView);
         mToolBar = (Toolbar) toolbar.findViewById(R.id.id_toolbar);
+        mToolBar.setTitleTextColor(android.R.color.holo_orange_dark);
         if (mToolBar == null) {
             L.e("R.id.toolbar not found");
         }

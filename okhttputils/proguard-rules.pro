@@ -1,6 +1,6 @@
 # Add project specific ProGuard rules here.
 # By default, the flags in this file are appended to flags specified
-# in D:\android-studio-sdk/tools/proguard/proguard-android.txt
+# in /Users/zhy/android/sdk/android-sdk-macosx/tools/proguard/proguard-android.txt
 # You can edit the include path and order by changing the proguardFiles
 # directive in build.gradle.
 #
@@ -15,17 +15,3 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
-
-#okhttputils
--dontwarn com.zhy.http.**
--keep class com.zhy.http.**{*;}
-
-
-#okhttp
--dontwarn okhttp3.**
--keep class okhttp3.**{*;}
-
-
-#okio
--dontwarn okio.**
--keep class okio.**{*;}
